@@ -10,6 +10,6 @@
 # Input
 X = df[['TotalSF']] # Pandas DataFrame
 # Label
-y = df['SalePrice'] # Serie 
+y = df['SalePrice'] # Pandas Serie 
 ```
 
