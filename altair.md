@@ -45,6 +45,20 @@ alt.Chart(trends).mark_bar().encode(
 )
 ```
 
+# bubble chart
+```python
+alt.Chart(lf).mark_circle().encode(
+    x = "Country GDP",
+    y = "Life Expectancy",
+    size = "size",
+    color = "Continent",
+    tooltip = ["country", "Country GDP", "Life Expectancy"]
+).properties(
+    width=800,
+    height=400
+)
+```
+
 # map
 ```python
 ```
