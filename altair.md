@@ -61,6 +61,13 @@ alt.Chart(lf).mark_circle().encode(
 
 # map
 ```python
+url="https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/madrid.geojson"
+
+madrid = alt.Data(url=url, format={"property":"features"})
+alt.Chart(madrid).mark_geoshape().encode().properties(
+    width=700,
+    height=500
+)
 ```
 
 # horizontal concatenation
